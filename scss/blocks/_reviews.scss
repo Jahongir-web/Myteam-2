@@ -1,0 +1,137 @@
+.reviews {
+  padding: 140px 0;
+  background-image: url("../img/delivery-top.svg"), url("../../img/delivery-disc.svg");
+  background-repeat: no-repeat;
+  background-size: 147px 100px, 200px 200px;
+  background-position: calc(50% - 647px) calc(50% - 325px), calc(50% + 675px) calc(50% + 373px);
+}
+
+.reviews__heading {
+  max-width: 932px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto 56px auto;
+
+}
+
+.reviews__span {
+  color: #79C8C7;
+}
+
+.reviews__list {
+  width: 100%;
+  list-style-type: none;
+  margin: 0 -15px 0 -15px;
+  padding: 0;
+  display: flex;
+
+}
+
+.reviews__item {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 15px;
+  padding: 36px 0 11px 0;
+  background-image: url("../img/tirnoq.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 56px;
+  background-position: center calc(50% - 130px);
+}
+
+.reviews__blockquote-text {
+  font-size: 15px;
+  line-height: 25px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 24px;
+
+}
+
+.reviews__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #79C8C7;
+  margin-bottom: 2px;
+}
+
+.reviews__job {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.reviews__img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .reviews {
+    padding: 100px 0;
+    background-position: calc(50% - 310px) calc(50% - 626px), calc(50% + 285px) calc(50% + 676px);
+  }
+
+  .reviews__heading {
+    max-width: 573px;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .reviews__span {
+    display: block;
+  }
+
+  .reviews__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .reviews__item {
+    max-width: 563px;
+    margin-bottom: 48px;
+    background-position: center calc(50% - 115px);
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .reviews {
+    padding: 140px 0 116px 0;
+    background-position: calc(50% - 115px) calc(50% - 710px), calc(50% + 87px) calc(50% + 758px);
+  }
+
+  .reviews__span {
+    display: inline;
+
+  }
+
+  .reviews__list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reviews__item {
+    min-width: 327px;
+  }
+}

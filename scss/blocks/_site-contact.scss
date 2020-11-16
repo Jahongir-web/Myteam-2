@@ -1,0 +1,229 @@
+.site-contact {
+  padding: 20px 0 120px 0;
+  background-image: url("../../img/directors-disc.svg"), url("../../img/contact-pinkdisc.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px, 224px 200px;
+  background-position: calc(50% - 720px) calc(50% - 160px), calc(50% + 720px) calc(50% + 188px);
+
+}
+
+.site-contact__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-contact__heading {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.site-contact__text {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: $pushti;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.site-contact__list {
+  max-width: 540px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.site-contact__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  &::before {
+    display: block;
+    width: 72px;
+    height: 72px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 23px;
+  }
+}
+
+.experienced {
+  &::before {
+    background-image: url("../img/feature-item-one.svg");
+  }
+}
+
+.site-contact__item-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.implement {
+  &::before {
+    background-image: url("../img/feature-item-two.svg");
+  }
+}
+
+.productivity {
+  &::before {
+    background-image: url("../img/feature-item-three.svg");
+  }
+}
+
+.site-contact__right-box {
+  max-width: 542px;
+  width: 100%;
+
+}
+
+.site-contact__input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding-bottom: 16px;
+  padding-left: 14px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  &::placeholder {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.6;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    color: $pushti;
+    border-bottom: 1px solid $pushti;
+  }
+
+  &:not(:placeholder-shown):invalid ~ .site-contact__input-email-error {
+    display: block;
+  }
+}
+
+.site-contact__input-box {
+  margin-bottom: 24px;
+}
+
+.contact__input-email {
+  margin-bottom: 0;
+}
+
+.site-contact__input-email-error {
+  display: none;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
+  color: $pushti;
+  margin-left: 14px;
+
+}
+
+.site-contact__textarea {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding-bottom: 16px;
+  padding-left: 14px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+
+  &::placeholder {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.6;
+  }
+}
+
+.site-contact__button {
+  margin-left: 0;
+  border: none;
+}
+
+@media only screen and (max-width: 1060px) {
+
+  .site-contact__left-box {
+    width: 40%;
+  }
+  .site-contact__list {
+    width: 100%;
+  }
+
+  .site-contact__right-box {
+    width: 50%;
+
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .site-contact {
+    background-position: calc(50% - 385px) calc(50% - 385px), calc(50% + 385px) calc(50% + 400px);
+  }
+
+  .site-contact__content {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .site-contact__heading {
+    text-align: center;
+    line-height: 56px;
+  }
+
+  .site-contact__text {
+    text-align: center;
+  }
+
+  .site-contact__left-box {
+    max-width: 515px;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+  .site-contact__list {
+    width: 100%;
+  }
+
+  .site-contact__right-box {
+    max-width: 542px;
+    width: 100%;
+
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .site-contact {
+    padding: 28px 0 88px 0;
+    background-position: calc(50% - 193px) calc(50% - 464px), calc(50% + 190px) calc(50% + 500px);
+  }
+
+  .site-contact__heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .site-contact__text {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .site-contact__item {
+    &::before {
+      flex-shrink: 0;
+    }
+  }
+
+}

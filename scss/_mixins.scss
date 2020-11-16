@@ -1,0 +1,5 @@
+@mixin uchburchak-up ($olcham, $rang) {
+  border: $olcham solid transparent;
+  border-bottom: $olcham solid $rang;
+
+}

@@ -1,0 +1,120 @@
+.hero {
+  padding-bottom: 250px;
+  background-image: url("../img/black-disk.svg"), url("../img/pink-disk.svg");
+  background-repeat: no-repeat;
+  background-size: 200px 200px, 358px 200px;
+  background-position: calc(50% - 720px) calc(50% - 130px), calc(50% + 375px) calc(50% + 245px);
+}
+
+.hero__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__heading {
+  max-width: 635px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__heading-span {
+  color: $pushti;
+}
+
+.hero__text {
+  max-width: 445px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 83px;
+  position: relative;
+  &::before {
+    display: block;
+    width: 50px;
+    height: 4px;
+    content: "";
+    background-color: #79C8C7;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+
+@media only screen and (max-width: 1025px) {
+  .hero__heading {
+    max-width: 635px;
+    font-size: 64px;
+    line-height: 56px;
+
+  }
+
+  .hero__text {
+    font-size: 15px;
+    line-height: 28px;
+    padding-top: 33px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    padding-bottom: 252px;
+    background-image: url("../img/pink-disk.svg");
+    background-repeat: no-repeat;
+    background-size: 358px 200px;
+    background-position: calc(50%) calc(50% + 250px);
+  }
+
+  .hero__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__heading {
+    text-align: center;
+
+  }
+
+  .hero__text {
+    padding-top: 24px;
+    text-align: center;
+    max-width: 457px;
+    &::before {
+      display: none;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .hero {
+    padding-bottom: 197px;
+    background-position: calc(50%) calc(50% + 220px);
+  }
+
+  .hero__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__heading {
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 18px;
+  }
+
+  .hero__text {
+    max-width: 327px;
+    padding-top: 0px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
