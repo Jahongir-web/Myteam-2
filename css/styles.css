@@ -2105,6 +2105,10 @@ img {
     max-width: 542px;
     width: 100%;
   }
+  .site-contact__item::before {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
 }
 
 @media only screen and (max-width: 375px) {
@@ -2119,10 +2123,6 @@ img {
   .site-contact__text {
     font-size: 32px;
     line-height: 48px;
-  }
-  .site-contact__item::before {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

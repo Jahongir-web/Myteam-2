@@ -202,6 +202,12 @@
 
   }
 
+  .site-contact__item {
+    &::before {
+      flex-shrink: 0;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -220,10 +226,6 @@
     line-height: 48px;
   }
 
-  .site-contact__item {
-    &::before {
-      flex-shrink: 0;
-    }
-  }
+
 
 }
